@@ -1,0 +1,21 @@
+{
+  "name": "mdblog-cli",
+  "version": "1.0.0",
+  "description": "mdblog markdown 静态网页生成器",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "mdblog": "./index.js"
+  },
+  "keywords": [
+    "markdown",
+    "静态页面"
+  ],
+  "author": "kaikai",
+  "license": "ISC",
+  "dependencies": {
+    "ora": "^3.0.0"
+  }
+}
