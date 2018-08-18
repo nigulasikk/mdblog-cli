@@ -1,6 +1,6 @@
 {
   "name": "mdblog-create",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "mdblog markdown 静态网页生成器",
   "main": "index.js",
   "scripts": {
