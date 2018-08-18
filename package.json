@@ -1,5 +1,5 @@
 {
-  "name": "mdblog-cli",
+  "name": "mdblog-create",
   "version": "1.0.0",
   "description": "mdblog markdown 静态网页生成器",
   "main": "index.js",
@@ -9,6 +9,10 @@
   "bin": {
     "mdblog": "./index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nigulasikk/mdblog-cli"
+  },
   "keywords": [
     "markdown",
     "静态页面"
@@ -16,6 +20,9 @@
   "author": "kaikai",
   "license": "ISC",
   "dependencies": {
+    "commander": "^2.17.1",
+    "download-git-repo": "^1.1.0",
+    "inquirer": "^6.1.0",
     "ora": "^3.0.0"
   }
 }
