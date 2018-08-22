@@ -20,13 +20,15 @@ program
         }]).then((answers) => {
             const spinner = ora('项目初始化中,请耐心稍等...').start();
             console.log('目录名:'+answers.blogName)
-            downloadGitRepo('github:nigulasikk/mdblog#dev', './' + answers.blogName, { clone: true }, err => {
+            downloadGitRepo('github:nigulasikk/mdblog', './' + answers.blogName, { clone: true }, err => {
                 spinner.stop();
                 if(!err){
                     spinner.succeed();
                     console.log('项目初始化成功!');
-                    console.log('cd ' + answers.blogName);
-                    console.log('');
+                    console.log('进入项目目录：cd ' + answers.blogName);
+                    console.log('1.安装依赖：npm install');
+                    console.log('2.生成静态html:npm run build ');
+                    console.log('3.如需自己定制html组件:npm run dev ');
                 } else {
                     spinner.fail();
                     console.log('项目初始化失败!');
